@@ -1,0 +1,69 @@
+Miniespecificación Problema01:
+
+1.  Inicio
+2.  funcion principal()
+3.    primerLado, d[0-n]
+4.    segundoLado, d[0-n]
+5.    tercerLado, d[0-n]
+6.    cuartoLado, d[0-n]
+7.    solucion, x(100)[{a-z}, {A-Z}, {BS, *, /, =}]
+8.    presentar, i[0-n]
+9.    << "Ingrese 1 para calcular el área de un cuadrado.\n
+10.   Ingrese 2 para calcular el área de un triangulo.\n
+11.   Ingrese 3 para calcular el área de un rectángulo."
+12.   >> dato
+13.   Si dato == 1 entonces
+14.     << "Ingrese la medida del lado 1:"
+15.	>> primerLado	
+16.	<< "Ingrese la medida del lado 2:"	
+17.	>> segundoLado	
+18.	<< "Ingrese la medida del lado 3:"	
+19.	>> tercerLado
+20.	<< "Ingrese la medida del lado 4:"	
+21.	>> cuartoLado	
+22.	solucion <-- obtenerAreaCuadrado(primerLado, segundoLado, tercerLado, cuartoLado)	
+23.	<< solucion	
+24.   De lo contario	
+25.	Si opcion == 2 entonces	
+26.	  altura, d[0-n] 
+27.	  base, d[0-n]	
+28.	  << "Ingrese la medida de la base:"	
+29.	  >> base		
+30.	  << "Ingrese la medida de la altura:"		
+31.	  >> altura		
+32.	  solucion <-- obtenerAreaTriangulo(base, altura)		
+33.	  << solucion		
+34.	De lo contario		
+35.	  base, d[0-n]		
+36.	  altura, d[0-n]
+37.	  << "Ingrese la medida de la base:"		
+38.	  >> base		
+39.	  << "Ingrese la medida de la altura:"		
+40.	  >> altura		
+41.	  solucion <-- obtenerAreaRectangulo(base, altura)		
+42.	  << solucion		
+43.	Fin Si		
+44.   Fin Si		
+45.  Fin funcion principal		
+46.  funcion obtenerAreaCuadrado(l1, d; l2, d; l3, d; l4, d;): d	
+47.    operacion, d[0-n]<-- 0
+48.    serie, x(100)[{A-Z}, {a-z}, {BS, *, =}
+49.    operacion <-- lado1 * lado2 * lado3 * lado4
+50.    serie<-- "El área del cuadrado es: " + l1 + " * " + l2 + " * " + l3 + " * " + l4 + " = " + operacion
+51.    retornar mensaje
+52.  Fin funcion obtenerAreaCuadrado	
+53.  funcion obtenerAreaTriangulo(base, d; altura, d): d	
+54.    operacion, d[0-n]
+55.    serie, x(100)[{A-Z}, {a-z}, {BS, *, =, /}
+56.    operacion <-- (base * altura)/2
+57.    serie <-- "El área del triángulo es: ( " + base + " * " + altura + " )/2 = " + operacion
+58.    retornar mensaje
+59.  Fin funcion obtenerAreaTriangulo	
+60.  funcion obtenerAreaRectangulo(base, d; altura, d): d	 
+61.    	operacion, d[0-n]
+62.     serie, x(100)[{A-Z}, {a-z}, {BS, *, =}
+63.     operacion <-- base * altura
+64.	serie <-- "El área del rectángulo es igual a " + base + " * " + altura + " = " + operacion
+65.  	retornar mensaje
+66.  Fin funcion obtenerAreaRectangulo	
+67.  Fin	
