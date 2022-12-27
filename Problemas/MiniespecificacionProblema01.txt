@@ -48,7 +48,7 @@ Miniespecificación Problema01:
 46.  funcion obtenerAreaCuadrado(l1, d; l2, d; l3, d; l4, d;): d	
 47.    operacion, d[0-n]<-- 0
 48.    serie, x(100)[{A-Z}, {a-z}, {BS, *, =}
-49.    operacion <-- lado1 * lado2 * lado3 * lado4
+49.    operacion <-- l1 * l2 * l3 * l4
 50.    serie<-- "El área del cuadrado es: " + l1 + " * " + l2 + " * " + l3 + " * " + l4 + " = " + operacion
 51.    retornar mensaje
 52.  Fin funcion obtenerAreaCuadrado	
@@ -63,7 +63,7 @@ Miniespecificación Problema01:
 61.    	operacion, d[0-n]
 62.     serie, x(100)[{A-Z}, {a-z}, {BS, *, =}
 63.     operacion <-- base * altura
-64.	serie <-- "El área del rectángulo es igual a " + base + " * " + altura + " = " + operacion
+64.	serie <-- "El área del rectángulo es " + base + " * " + altura + " = " + operacion
 65.  	retornar mensaje
 66.  Fin funcion obtenerAreaRectangulo	
 67.  Fin	
